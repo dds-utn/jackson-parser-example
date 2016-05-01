@@ -33,7 +33,8 @@ public class StudentMapperTest {
 											+ "\"year\": 2016,"
 											+ "\"mark\": 10"
 										+  "}"
-									+ "]"
+									+ "],"
+			+ "\"extra_property\": \"Does not fail because mapper is configured to not fail with unknown properties\""
 			+ "}";
 	
 	@Before
