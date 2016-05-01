@@ -2,13 +2,17 @@ package service.student;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Student {
 	
 	private String firstname;
 	private String lastname;
 	private Address address;
 	private int age;
+	@JsonProperty("id_card")
 	private long idCard;
+	@JsonProperty("passed_subjects")
 	private List<PassedSubject> passedSubjects;
 
 	public String getFirstname() {
