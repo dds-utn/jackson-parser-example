@@ -3,7 +3,6 @@ package json;
 import java.io.IOException;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -29,7 +28,7 @@ public class JsonFactory {
 		}
 	}
 
-	public <T> T fromJson(String json, TypeReference<T> typeReference) {
+	public <T> T fromJson(String json, Class<T> typeReference) {
 		try {
 			return this.objectMapper.readValue(json, typeReference);
 		} catch (IOException e) {

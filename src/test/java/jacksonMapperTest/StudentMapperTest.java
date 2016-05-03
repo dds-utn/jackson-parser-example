@@ -6,8 +6,6 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-
 import json.JsonFactory;
 import service.student.Address;
 import service.student.Student;
@@ -39,8 +37,7 @@ public class StudentMapperTest {
 	
 	@Before
 	public void setUp() {
-		student = jsonFactory.fromJson(jsonStudent,new TypeReference<Student>() {
-		});
+		student = jsonFactory.fromJson(jsonStudent,Student.class);
 	}
 	
 	
