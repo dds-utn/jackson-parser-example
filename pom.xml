@@ -6,7 +6,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<properties>
 		<junit.version>4.12</junit.version>
-		<jackson.version>2.7.4</jackson.version>
+		<jackson.version>2.12.1</jackson.version>
 	</properties>
 	<build>
 		<plugins>
